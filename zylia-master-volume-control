@@ -1,0 +1,103 @@
+﻿// Copyright (c) 2018 Zylia Sp. z o.o.
+// License: LGPL - http://www.gnu.org/licenses/lgpl.html
+// author: Tomasz Żernicki
+
+desc:ZYLIA Master Volume Control
+
+in_pin:Input 1
+in_pin:Input 2
+in_pin:Input 3
+in_pin:Input 4
+in_pin:Input 5
+in_pin:Input 6
+in_pin:Input 7
+in_pin:Input 8
+in_pin:Input 9
+in_pin:Input 10
+in_pin:Input 11
+in_pin:Input 12
+in_pin:Input 13
+in_pin:Input 14
+in_pin:Input 15
+in_pin:Input 16
+in_pin:Input 17
+in_pin:Input 18
+in_pin:Input 19
+
+out_pin:Output 1
+out_pin:Output 2
+out_pin:Output 3
+out_pin:Output 4
+out_pin:Output 5
+out_pin:Output 6
+out_pin:Output 7
+out_pin:Output 8
+out_pin:Output 9
+out_pin:Output 10
+out_pin:Output 11
+out_pin:Output 12
+out_pin:Output 13
+out_pin:Output 14
+out_pin:Output 15
+out_pin:Output 16
+out_pin:Output 17
+out_pin:Output 18
+out_pin:Output 19
+
+slider1:vdBMaster=0.0<-70,70,0.1>Master Volume (dB)
+
+
+
+
+@init
+function amp (volumedB, vdBmain, in)
+ local (vol)
+ instance (out)
+(
+ vol      = 10^(volumedB/20);     // convert dB to amp
+ volMain  = 10^(vdBmain/20);      // convert dB to amp
+ out      = in * (vol * volMain); // multiply sample in by amp, result to out
+);
+
+@sample
+vol01.amp(vdB01, vdBmaster, spl0); // calculate value from slider1 and samples from input 1
+vol02.amp(vdB02, vdBmaster, spl1); 
+vol03.amp(vdB03, vdBmaster, spl2); 
+vol04.amp(vdB04, vdBmaster, spl3); 
+vol05.amp(vdB05, vdBmaster, spl4); 
+vol06.amp(vdB06, vdBmaster, spl5); 
+vol07.amp(vdB07, vdBmaster, spl6); 
+vol08.amp(vdB08, vdBmaster, spl7); 
+vol09.amp(vdB09, vdBmaster, spl8); 
+vol10.amp(vdB10, vdBmaster, spl9); 
+vol11.amp(vdB11, vdBmaster, spl10); 
+vol12.amp(vdB12, vdBmaster, spl11);
+vol13.amp(vdB13, vdBmaster, spl12); 
+vol14.amp(vdB14, vdBmaster, spl13); 
+vol15.amp(vdB15, vdBmaster, spl14); 
+vol16.amp(vdB16, vdBmaster, spl15);
+vol17.amp(vdB17, vdBmaster, spl16); 
+vol18.amp(vdB18, vdBmaster, spl17); 
+vol19.amp(vdB19, vdBmaster, spl18); 
+
+spl0 = vol01.out; // result to output 1
+spl1 = vol02.out; 
+spl2 = vol03.out; 
+spl3 = vol04.out; 
+spl4 = vol05.out; 
+spl5 = vol06.out; 
+spl6 = vol07.out; 
+spl7 = vol08.out; 
+spl8 = vol09.out; 
+spl9 = vol10.out; 
+spl10 = vol11.out; 
+spl11 = vol12.out;
+spl12 = vol13.out; 
+spl13 = vol14.out; 
+spl14 = vol15.out; 
+spl15 = vol16.out;
+spl16 = vol17.out; 
+spl17 = vol18.out; 
+spl18 = vol19.out; 
+spl19 = vol20.out;
+
