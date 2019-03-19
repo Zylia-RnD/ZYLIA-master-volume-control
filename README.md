@@ -15,7 +15,7 @@ Main feature is volume adjustment of 19-channel recordings in the range +/- 70 d
 3. Copy ZYLIA Master Volume Control plugin to the *Effects* folder
 4. Open REAPER -> Options -> Preferences -> Plug-ins -> VST and click on Re-scan button
 
-You can also refer to this tutorial" https://www.youtube.com/watch?v=9EegrN-gF5o
+You can also refer to this tutorial https://www.youtube.com/watch?v=9EegrN-gF5o
 
 ### Usage
 In REAPER create the following FX chain:
@@ -27,5 +27,7 @@ To monitor volume changes we recommend multi-channel level meters such as:
 * [WigWare Multi-Channel VU Meter](http://www.brucewiggins.co.uk/wp-content/uploads/2016/04/WigMCVUMeter.zip) by Bruce Wiggins
 * [mcfx_meter](http://www.matthiaskronlachner.com/?p=1910) by Matthias Kronlachner
 
-![](ZYLIA-master-volume-control/docs/zylia-master-volume-control-fx-chain.png)
-![](ZYLIA-master-volume-control/docs/zylia-master-volume-control-usage.png)
+![ZYLIA Master Volume Control](./docs/zylia-master-volume-control-fx-chain.png?raw=true) <br>
+<br>
+<br>
+![ZYLIA Master Volume Control](./docs/zylia-master-volume-control-usage.png?raw=true)
