@@ -27,7 +27,5 @@ To monitor volume changes we recommend multi-channel level meters such as:
 * [WigWare Multi-Channel VU Meter](http://www.brucewiggins.co.uk/wp-content/uploads/2016/04/WigMCVUMeter.zip) by Bruce Wiggins
 * [mcfx_meter](http://www.matthiaskronlachner.com/?p=1910) by Matthias Kronlachner
 
-![ZYLIA Master Volume Control](./docs/zylia-master-volume-control-fx-chain.png?raw=true) <br>
-<br>
-<br>
-![ZYLIA Master Volume Control](./docs/zylia-master-volume-control-usage.png?raw=true)
+![ZYLIA Master Volume Control](./docs/zylia-master-volume-control-fx-chain.png)
+
