@@ -28,4 +28,8 @@ To monitor volume changes we recommend multi-channel level meters such as:
 * [mcfx_meter](http://www.matthiaskronlachner.com/?p=1910) by Matthias Kronlachner
 
 ![ZYLIA Master Volume Control](./docs/zylia-master-volume-control-fx-chain.png)
+<br>
+<br>
+![ZYLIA Master Volume Control](./docs/zylia-master-volume-control-fx-chain2.png)
+
 
